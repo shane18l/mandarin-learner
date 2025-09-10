@@ -1,20 +1,3 @@
-# def visualize_file(file_path):
-#     y, sr = librosa.load(file_path)
-#     f0, voiced_flag, voiced_probs = librosa.pyin(y, 
-#                                                      sr=sr,
-#                                                      fmin=75,
-#                                                      fmax=500)
-#     times = librosa.times_like(f0, sr=sr)
-
-#     plt.figure(figsize= (8,4))
-#     plt.plot(times, f0, label="F0", color="lime")
-#     plt.title("Pitch Contour (F0)")
-#     plt.xlabel("Time (s)")
-#     plt.ylabel("Frequency (Hz)")
-#     plt.legend()
-#     plt.ylim(75, 320)
-#     plt.show()
-
 import pandas as pd
 
 df = pd.read_csv('mandarin_tone_dataset.csv')
